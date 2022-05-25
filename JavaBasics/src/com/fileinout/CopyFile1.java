@@ -1,4 +1,4 @@
-package FileInOut;
+package com.fileinout;
 
 import java.io.*;
 
