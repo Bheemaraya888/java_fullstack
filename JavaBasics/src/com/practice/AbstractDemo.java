@@ -1,12 +1,9 @@
 package com.practice;
 
-
-class Bank
+abstract class Bank
 {
-	float getInterstRate() 
-	{
-		return 6.7f;
-	}
+	 abstract float getInterstRate(); 
+	
 }
 
 class SBI extends Bank
@@ -35,7 +32,7 @@ public class MethodOveriddenDemo {
 		// TODO Auto-generated method stub
 		//static Binding
 		//loose coupling
-		Bank b = new Bank();
+		Bank b = new SBI();
 		System.out.println(b.getInterstRate());
 		
 		SBI s= new SBI();
@@ -45,6 +42,15 @@ public class MethodOveriddenDemo {
 		//Hard coupling
 		Bank h=new HDFC();
 		System.out.println(h.getInterstRate());
+
+	}
+
+}
+
+public class AbstractDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
 	}
 
