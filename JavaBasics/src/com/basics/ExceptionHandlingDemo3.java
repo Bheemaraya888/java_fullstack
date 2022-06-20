@@ -24,6 +24,10 @@ public class ExceptionHandlingDemo3 {
 		{
 			ae.printStackTrace();
 		}
+		finally 
+		{
+			sc.close();
+		}
 	System.out.println("rest of the code...");
 	}
 	}
